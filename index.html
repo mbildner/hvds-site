@@ -62,19 +62,19 @@
       margin: 0 auto;
       padding: 12vh 24px 64px;
     }
-    .mark {
+    .banner {
       display: block;
-      width: 64px;
-      height: 64px;
-      margin-bottom: 28px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 1.2rem;
     }
-    h1 {
-      font-family: var(--ds-font-display);
-      font-size: clamp(2rem, 6vw, 3rem);
-      line-height: 1.08;
-      letter-spacing: -1px;
-      text-transform: lowercase;
-      margin-bottom: 0.6rem;
+    .sr-only {
+      position: absolute;
+      width: 1px; height: 1px;
+      padding: 0; margin: -1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
     }
     .tagline {
       font-family: var(--ds-font-heading);
@@ -153,15 +153,21 @@
 </head>
 <body>
   <main>
-    <svg class="mark" viewBox="0 0 1024 1024" aria-hidden="true">
-      <rect width="1024" height="1024" rx="224" fill="#0a1f33"/>
-      <g transform="translate(90 0) skewX(-10)">
-        <rect x="330" y="295" width="120" height="300" fill="#ffffff"/>
-        <rect x="505" y="295" width="120" height="430" fill="#ffffff"/>
-        <rect x="680" y="295" width="120" height="300" fill="#38bdf8"/>
+    <h1 class="sr-only">Hudson Valley Data Solutions</h1>
+    <svg class="banner" viewBox="0 0 1200 280" aria-hidden="true">
+      <rect width="1200" height="280" rx="28" fill="#0a1f33"/>
+      <g transform="translate(-72 -84) scale(0.42)">
+        <g transform="translate(90 0) skewX(-10)">
+          <rect x="330" y="295" width="120" height="300" fill="#ffffff"/>
+          <rect x="505" y="295" width="120" height="430" fill="#ffffff"/>
+          <rect x="680" y="295" width="120" height="300" fill="#38bdf8"/>
+        </g>
       </g>
+      <text x="330" y="128" font-family="'Archivo Black',sans-serif" font-size="74"
+        letter-spacing="-1" fill="#ffffff">hudson valley</text>
+      <text x="330" y="212" font-family="'Archivo Black',sans-serif" font-size="74"
+        letter-spacing="-1" fill="#38bdf8">data solutions</text>
     </svg>
-    <h1>Hudson Valley<br>Data Solutions</h1>
     <p class="tagline">Independent data &amp; software consultancy — Brooklyn, New York</p>
     <div class="card">
       <h2>What we do</h2>
