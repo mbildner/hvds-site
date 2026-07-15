@@ -126,6 +126,7 @@
     }
     .cta {
       display: inline-block;
+      max-width: 100%;
       background: var(--ds-accent);
       color: var(--ds-accent-ink);
       font-family: var(--ds-font-heading);
@@ -140,6 +141,13 @@
     }
     .cta:hover { background: var(--ds-accent-tint); }
     .cta:active { background: var(--ds-accent-shade); }
+    @media (max-width: 480px) {
+      .cta {
+        font-size: 0.66rem;
+        letter-spacing: 0.5px;
+        padding: 12px 14px;
+      }
+    }
     footer {
       width: 100%;
       max-width: 680px;
@@ -184,7 +192,7 @@
     <div class="card">
       <h2>Contact</h2>
       <p>Tell us about your project.</p>
-      <a class="cta" href="mailto:contact@hvdatasolutions.com">contact@hvdatasolutions.com</a>
+      <a class="cta" href="mailto:contact@hvdatasolutions.com">contact@<wbr>hvdatasolutions.com</a>
     </div>
   </main>
   <footer>
