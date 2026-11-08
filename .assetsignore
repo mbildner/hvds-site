@@ -1,0 +1,12 @@
+wrangler.jsonc
+.assetsignore
+.gitignore
+.git
+.wrangler
+README.md
+CNAME
+.nojekyll
+.claude
+.env
+.env.*
+.DS_Store
